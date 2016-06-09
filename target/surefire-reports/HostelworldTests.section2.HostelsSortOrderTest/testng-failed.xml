@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [HostelworldTests.section2.HostelsSortOrderTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="HostelworldTests.section2.HostelsSortOrderTest">
+        <methods>
+          <include name="goToHomepage"/>
+          <include name="useCase1SortByName"/>
+          <include name="searchProperties"/>
+          <include name="shutdown"/>
+          <include name="useCase2SortByPrice"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- HostelworldTests.section2.HostelsSortOrderTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [HostelworldTests.section2.HostelsSortOrderTest] -->
