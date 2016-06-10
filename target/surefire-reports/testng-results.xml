@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="HostelworldTests.section2.HostelsSortOrderTest" duration-ms="40273" started-at="2016-06-10T11:04:34Z" finished-at="2016-06-10T11:05:14Z">
+  <suite name="HostelworldTests.section2.HostelsSortOrderTest" duration-ms="33920" started-at="2016-06-10T13:32:20Z" finished-at="2016-06-10T13:32:54Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="40273" started-at="2016-06-10T11:04:34Z" finished-at="2016-06-10T11:05:14Z">
+    <test name="Command line test" duration-ms="33920" started-at="2016-06-10T13:32:20Z" finished-at="2016-06-10T13:32:54Z">
       <class name="HostelworldTests.section2.HostelsSortOrderTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:HostelworldTests.section2.HostelsSortOrderTest@5dfcfece]" name="setup" is-config="true" duration-ms="8900" started-at="2016-06-10T12:04:34Z" finished-at="2016-06-10T12:04:43Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:HostelworldTests.section2.HostelsSortOrderTest@215be6bb]" name="setup" is-config="true" duration-ms="8869" started-at="2016-06-10T14:32:20Z" finished-at="2016-06-10T14:32:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="goToHomepage()[pri:0, instance:HostelworldTests.section2.HostelsSortOrderTest@5dfcfece]" name="goToHomepage" duration-ms="5877" started-at="2016-06-10T12:04:43Z" finished-at="2016-06-10T12:04:48Z">
+        <test-method status="PASS" signature="goToHomepage()[pri:0, instance:HostelworldTests.section2.HostelsSortOrderTest@215be6bb]" name="goToHomepage" duration-ms="5026" started-at="2016-06-10T14:32:29Z" finished-at="2016-06-10T14:32:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToHomepage -->
-        <test-method status="PASS" signature="searchProperties()[pri:0, instance:HostelworldTests.section2.HostelsSortOrderTest@5dfcfece]" name="searchProperties" duration-ms="10447" started-at="2016-06-10T12:04:48Z" depends-on-methods="HostelworldTests.section2.HostelsSortOrderTest.goToHomepage" finished-at="2016-06-10T12:04:59Z">
+        <test-method status="PASS" signature="searchProperties()[pri:0, instance:HostelworldTests.section2.HostelsSortOrderTest@215be6bb]" name="searchProperties" duration-ms="5984" started-at="2016-06-10T14:32:34Z" depends-on-methods="HostelworldTests.section2.HostelsSortOrderTest.goToHomepage" finished-at="2016-06-10T14:32:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProperties -->
-        <test-method status="PASS" signature="useCase1SortByName()[pri:0, instance:HostelworldTests.section2.HostelsSortOrderTest@5dfcfece]" name="useCase1SortByName" duration-ms="9843" started-at="2016-06-10T12:04:59Z" depends-on-methods="HostelworldTests.section2.HostelsSortOrderTest.searchProperties" finished-at="2016-06-10T12:05:09Z">
+        <test-method status="PASS" signature="useCase1SortByName()[pri:0, instance:HostelworldTests.section2.HostelsSortOrderTest@215be6bb]" name="useCase1SortByName" duration-ms="9406" started-at="2016-06-10T14:32:40Z" depends-on-methods="HostelworldTests.section2.HostelsSortOrderTest.searchProperties" finished-at="2016-06-10T14:32:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- useCase1SortByName -->
-        <test-method status="PASS" signature="useCase2SortByPrice()[pri:0, instance:HostelworldTests.section2.HostelsSortOrderTest@5dfcfece]" name="useCase2SortByPrice" duration-ms="4210" started-at="2016-06-10T12:05:09Z" depends-on-methods="HostelworldTests.section2.HostelsSortOrderTest.useCase1SortByName" finished-at="2016-06-10T12:05:13Z">
+        <test-method status="PASS" signature="useCase2SortByPrice()[pri:0, instance:HostelworldTests.section2.HostelsSortOrderTest@215be6bb]" name="useCase2SortByPrice" duration-ms="3785" started-at="2016-06-10T14:32:50Z" depends-on-methods="HostelworldTests.section2.HostelsSortOrderTest.useCase1SortByName" finished-at="2016-06-10T14:32:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- useCase2SortByPrice -->
-        <test-method status="PASS" signature="shutdown()[pri:0, instance:HostelworldTests.section2.HostelsSortOrderTest@5dfcfece]" name="shutdown" is-config="true" duration-ms="973" started-at="2016-06-10T12:05:13Z" finished-at="2016-06-10T12:05:14Z">
+        <test-method status="PASS" signature="shutdown()[pri:0, instance:HostelworldTests.section2.HostelsSortOrderTest@215be6bb]" name="shutdown" is-config="true" duration-ms="829" started-at="2016-06-10T14:32:53Z" finished-at="2016-06-10T14:32:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutdown -->
