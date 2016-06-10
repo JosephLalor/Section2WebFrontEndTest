@@ -1,5 +1,6 @@
 /* 
- * 
+ * Test script class for testing property sort order on Hostelworld site
+ * Refers to classes in framework project
  * @author Joseph Lalor
  * 
  */
@@ -14,14 +15,12 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import edu.emory.mathcs.backport.java.util.Arrays;
 import HostelworldFramework.pageObjects.*;
 
 public class HostelsSortOrderTest 
 {
 	// Variables
-	String programClassName = "HostelsAlphabeticalOrderTest";
+	String programClassName = "HostelsSortOrderTest";
 	String searchText = "dublin";
 	String nameOptionValue = "sortByName";
 	String priceOptionValue = "sortByPrice";
@@ -42,8 +41,7 @@ public class HostelsSortOrderTest
 	boolean instTitleFound;
 	boolean orderNumberFound;
 	
-	
-	
+	// Declares framework page objects and opens browser window
 	@BeforeTest
 	public void setup() 
 	{
@@ -60,6 +58,7 @@ public class HostelsSortOrderTest
         driver.manage().window().maximize();
 	}
 	
+	// Tests that home page has been reached on launch of browser and input of site URL
 	@Test
 	public void goToHomepage()
 	{
@@ -69,6 +68,7 @@ public class HostelsSortOrderTest
         Assert.assertTrue(driver.getCurrentUrl().startsWith(homepageURL),"Incorrect page, test failed");
 	}
 	
+	// Tests that property listings page has been reached by checking title
 	@Test(dependsOnMethods={"goToHomepage"})
 	public void searchProperties()
 	{
@@ -78,6 +78,7 @@ public class HostelsSortOrderTest
 		Assert.assertEquals(driver.getTitle(),pageTitle,"Incorrect page, test failed");
 	}
 	
+	// Tests that listings are in alphabetical order of property name
 	@Test(dependsOnMethods={"searchProperties"})
 	public void useCase1SortByName()
 	{
@@ -88,11 +89,13 @@ public class HostelsSortOrderTest
 		}
 		catch(Exception e)
 		{
+			// Tries again if option not visible
 			propertyListPage.selectSortOrder(nameOptionValue);
 		}
 		Assert.assertTrue(propertyListPage.sortByName(),"Listings not in name order");
 	}
 	
+	// Tests that listings are in numerical order of property price
 	@Test(dependsOnMethods={"useCase1SortByName"})
 	public void useCase2SortByPrice()
 	{
@@ -103,6 +106,7 @@ public class HostelsSortOrderTest
 		}
 		catch(Exception e)
 		{
+			// Tries again if option not visible
 			propertyListPage.selectSortOrder(priceOptionValue);
 		}
 		Assert.assertTrue(propertyListPage.sortByPrice(),"Listings not in price order");
@@ -112,8 +116,8 @@ public class HostelsSortOrderTest
 	public void shutdown()
 	{
 		System.out.println(programClassName+": 'shutdown' running");
-		//driver.close();
-		//driver.quit();
+		driver.close();
+		driver.quit();
 		System.out.println(programClassName+" finished");
     }
 }
